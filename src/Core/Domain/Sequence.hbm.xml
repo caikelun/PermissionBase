@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0" namespace="PermissionBase.Core.Domain" assembly="PermissionBase.Core">
+  <class name="Sequence" table="PB_SEQUENCE">
+
+    <id name="TableName" column="PB_TABLE_NAME" type="String" length="50">
+      <generator class="assigned" />
+    </id>
+
+    <property name="NextId" column="PB_NEXT_ID" type="Int32" not-null="true" />
+
+  </class>
+</hibernate-mapping>

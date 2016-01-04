@@ -1,0 +1,14 @@
+﻿<public:component lightweight="true">
+<public:attach event="onmouseover" onevent="doMouseOver()" />
+<public:attach event="onmouseout" onevent="doMouseOut()" />
+<script language="JavaScript">
+function doMouseOver()
+{
+	if(!element.disabled) element.className = "toolBarBtnOver";
+}
+function doMouseOut()
+{
+	if(!element.disabled) element.className = "toolBarBtn";
+}
+</script>
+</public:component>

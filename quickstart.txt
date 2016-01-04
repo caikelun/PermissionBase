@@ -1,0 +1,30 @@
+1> 使用数据库管理员账号登入数据库，根据您选择的数据库产品，
+   运行 model\sql 目录下的对应 sql 脚本，以创建数据库、用户、
+   表、索引等。
+
+   DB2 9                 :  db2_9_create.sql
+   MySQL 5               :  mysql_5_create.sql
+   Oracle DataBase 10g   :  oracle_10g_create.sql
+   SQL Server 2000/2005  :  sqlserver_2000or2005_create.sql
+
+
+2> 用Visual Studio 2005（Pro版或Team版）打开src文件夹下的
+   PermissionBase.sln解决方案文件，打开Web项目根目录下的
+   nhibernate.config文件，根据您选择的数据库产品，适当修改
+   Web 项目根目录下的nhibernate.config 配置文件。
+   注释掉不需要的数据库配置行。然后修改数据库连接字符串。
+
+   注1: 可能需要修改的是 Server 或 Data Source 部分。
+   注2: 数据库名称不需要修改。
+   注3: 除了DB2以外，用户名和密码也不需要修改。
+
+
+3> 按 F5 启动运行。
+
+
+4> 使用超级用户进入系统。
+   用户名 : admin
+   密码   : 123456
+
+
+5> 关于系统的功能和设计的详细描述，见 doc 目录下的文档。
